@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "BookLibrary.DbMigration": {
+      "commandName": "Project"
+    },
+    "Docker": {
+      "commandName": "Docker"
+    }
+  }
+}

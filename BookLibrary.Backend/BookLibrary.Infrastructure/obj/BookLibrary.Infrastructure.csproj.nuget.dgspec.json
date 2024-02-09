@@ -1,0 +1,235 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\dyu\\source\\repos\\BookLibrary\\BookLibrary.Backend\\BookLibrary.Infrastructure\\BookLibrary.Infrastructure.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\dyu\\source\\repos\\BookLibrary\\BookLibrary.Backend\\BookLibrary.Application\\BookLibrary.Application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\dyu\\source\\repos\\BookLibrary\\BookLibrary.Backend\\BookLibrary.Application\\BookLibrary.Application.csproj",
+        "projectName": "BookLibrary.Application",
+        "projectPath": "C:\\Users\\dyu\\source\\repos\\BookLibrary\\BookLibrary.Backend\\BookLibrary.Application\\BookLibrary.Application.csproj",
+        "packagesPath": "C:\\Users\\dyu\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\dyu\\source\\repos\\BookLibrary\\BookLibrary.Backend\\BookLibrary.Application\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\dyu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nuget.pkg.github.com/Cycolis-Software/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "C:\\Users\\dyu\\source\\repos\\BookLibrary\\BookLibrary.Backend\\BookLibrary.Domain\\BookLibrary.Domain.csproj": {
+                "projectPath": "C:\\Users\\dyu\\source\\repos\\BookLibrary\\BookLibrary.Backend\\BookLibrary.Domain\\BookLibrary.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[13.0.1, )"
+            },
+            "MediatR": {
+              "target": "Package",
+              "version": "[12.2.0, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.15, )"
+            },
+            "Microsoft.Extensions.Configuration.Binder": {
+              "target": "Package",
+              "version": "[7.0.4, )"
+            },
+            "Microsoft.Extensions.DependencyInjection": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\dyu\\source\\repos\\BookLibrary\\BookLibrary.Backend\\BookLibrary.Domain\\BookLibrary.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\dyu\\source\\repos\\BookLibrary\\BookLibrary.Backend\\BookLibrary.Domain\\BookLibrary.Domain.csproj",
+        "projectName": "BookLibrary.Domain",
+        "projectPath": "C:\\Users\\dyu\\source\\repos\\BookLibrary\\BookLibrary.Backend\\BookLibrary.Domain\\BookLibrary.Domain.csproj",
+        "packagesPath": "C:\\Users\\dyu\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\dyu\\source\\repos\\BookLibrary\\BookLibrary.Backend\\BookLibrary.Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\dyu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nuget.pkg.github.com/Cycolis-Software/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\dyu\\source\\repos\\BookLibrary\\BookLibrary.Backend\\BookLibrary.Infrastructure\\BookLibrary.Infrastructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\dyu\\source\\repos\\BookLibrary\\BookLibrary.Backend\\BookLibrary.Infrastructure\\BookLibrary.Infrastructure.csproj",
+        "projectName": "BookLibrary.Infrastructure",
+        "projectPath": "C:\\Users\\dyu\\source\\repos\\BookLibrary\\BookLibrary.Backend\\BookLibrary.Infrastructure\\BookLibrary.Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\dyu\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\dyu\\source\\repos\\BookLibrary\\BookLibrary.Backend\\BookLibrary.Infrastructure\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\dyu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nuget.pkg.github.com/Cycolis-Software/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "C:\\Users\\dyu\\source\\repos\\BookLibrary\\BookLibrary.Backend\\BookLibrary.Application\\BookLibrary.Application.csproj": {
+                "projectPath": "C:\\Users\\dyu\\source\\repos\\BookLibrary\\BookLibrary.Backend\\BookLibrary.Application\\BookLibrary.Application.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "target": "Package",
+              "version": "[7.0.15, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[7.0.15, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.15, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

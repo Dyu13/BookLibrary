@@ -1,0 +1,13 @@
+{
+  "profiles": {
+    "Docker Compose": {
+      "commandName": "DockerCompose",
+      "commandVersion": "1.0",
+      "serviceActions": {
+        "booklibrary.api": "StartWithoutDebugging"
+      },
+      "composeLaunchAction": "LaunchBrowser",
+      "composeLaunchUrl": "http://localhost:15100"
+    }
+  }
+}

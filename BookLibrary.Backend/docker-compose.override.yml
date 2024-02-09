@@ -1,0 +1,9 @@
+version: '3.4'
+
+services:
+  book-library-api:
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ASPNETCORE_URLS=http://+:15100
+    ports:
+      - "15100:15100"

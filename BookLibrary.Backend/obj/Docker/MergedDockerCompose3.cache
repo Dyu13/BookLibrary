@@ -1,0 +1,55 @@
+name: dockercompose14813031519253017264
+services:
+  book-db:
+    container_name: book-db
+    environment:
+      ACCEPT_EULA: "Y"
+      SA_PASSWORD: TestDb2024
+    hostname: book-library-db-ip
+    image: mcr.microsoft.com/mssql/server:2017-latest
+    networks:
+      book-network: null
+    ports:
+      - mode: ingress
+        target: 1433
+        published: "1434"
+        protocol: tcp
+  book-library-api:
+    build:
+      context: C:\Users\dyu\source\repos\BookLibrary\BookLibrary.Backend
+      dockerfile: BookLibrary.Api/Dockerfile
+    container_name: book-library-api
+    depends_on:
+      book-library-db-migrate:
+        condition: service_started
+        required: true
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_URLS: http://+:15100
+      ConnectionStrings__DbConnectionString: Server=book-library-db-ip,1433;Initial Catalog=BookLibrary;User Id=SA;Password=TestDb2024;Trust Server Certificate=true
+    image: book-library-api
+    networks:
+      book-network: null
+    ports:
+      - mode: ingress
+        target: 15100
+        published: "15100"
+        protocol: tcp
+  book-library-db-migrate:
+    build:
+      context: C:\Users\dyu\source\repos\BookLibrary\BookLibrary.Backend
+      dockerfile: BookLibrary.DbMigration/Dockerfile
+    container_name: book-library-db-migrate
+    depends_on:
+      book-db:
+        condition: service_started
+        required: true
+    environment:
+      ConnectionStrings__DbConnectionString: Server=book-library-db-ip,1433;Initial Catalog=BookLibrary;User Id=SA;Password=TestDb2024;Trust Server Certificate=true
+      HasTestData: "True"
+    image: book-library-db-migrate
+    networks:
+      book-network: null
+networks:
+  book-network:
+    name: dockercompose14813031519253017264_book-network
